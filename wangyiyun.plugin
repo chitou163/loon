@@ -1,0 +1,12 @@
+#!name = 网易云解锁VIP
+#!desc = 不会变身会员,可以直接听会员歌曲！无法调高音质！
+#!openUrl = 
+#!author = ios-🐔神
+#!icon = https://raw.githubusercontent.com/mphin/ProxyTools/main/plugin/WangYiYun/icon/WangYiYun.png
+#!date = 2024-05-22 
+
+[Script]
+http-request ^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ script-path = https://raw.githubusercontent.com/gjwj666/qx/main/Wyy.js, tag = 网易云解锁VIP
+
+[mitm] 
+hostname = *.music.163.com
