@@ -7,7 +7,7 @@
 #!date = 2024-05-22 16:06
 
 [Script]
-http-request ^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ script-path = https://raw.githubusercontent.com/gjwj666/qx/main/Wyy.js, tag = 网易云解锁VIP
+http-request ^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ script-path = https://raw.githubusercontent.com/chitou163/loon/main/Js/Wyy.js, tag = 网易云解锁VIP
 
 [mitm] 
 hostname = *.music.163.com
