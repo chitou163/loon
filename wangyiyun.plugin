@@ -1,8 +1,9 @@
 #!name = 网易云解锁VIP
 #!desc = 不会变身会员,可以直接听会员歌曲！无法调高音质！
-#!openUrl = https://github.com/gjwj666/qx/tree/main
+#!openUrl =
 #!author = ios-🐔神
-#!icon = raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music_Unlock.png
+#!homepage = https://github.com/gjwj666/qx/tree/main
+#!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music_Unlock.png
 #!date = 2024-05-22 16:06
 
 [Script]
