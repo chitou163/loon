@@ -1,5 +1,5 @@
 /*
-脚本名称：捷停车签到
+脚本名称：捷停车签到（改）
 活动入口：捷停车APP-停车币签到
 签到规则：连签奖励，首日 6 停车币、次日 7 停车币，以此类推7天封顶
 活动奖励：停车币可用于兑换停车券，比例 1000:1
@@ -12,27 +12,27 @@
 hostname = %APPEND% sytgate.jslife.com.cn
 
 [Script]
-获取捷停车userId = type=http-request, pattern=^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js
+获取捷停车userId = type=http-request, pattern=^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/chitou163/loon/main/Js/jparking_sign.js
 
-捷停车签到 = type=cron, cronexp=15 9 * * *, timeout=60, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, script-update-interval=0
+捷停车签到 = type=cron, cronexp=15 9 * * *, timeout=60, script-path=https://raw.githubusercontent.com/chitou163/loon/main/Js/jparking_sign.js, script-update-interval=0
 
 ============ Quantumult X 配置 =============
 [MITM]
 hostname = sytgate.jslife.com.cn
 
 [rewrite_local]
-^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info url script-request-body https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js
+^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info url script-request-body https://raw.githubusercontent.com/chitou163/loon/main/Js/jparking_sign.js
 
 [task_local]
-15 9 * * * https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, tag=捷停车签到, enabled=true
+15 9 * * * https://raw.githubusercontent.com/chitou163/loon/main/Js/jparking_sign.js, tag=捷停车签到, enabled=true
 
 ================ Loon 配置 ================
 [MITM]
 hostname = sytgate.jslife.com.cn
 
-cron "15 9 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, tag=捷停车签到
+cron "15 9 * * *" script-path=https://raw.githubusercontent.com/chitou163/loon/main/Js/jparking_sign.js, tag=捷停车签到（改）
 
-http-request ^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, requires-body=true, timeout=10, enabled=false, tag=获取捷停车userId
+http-request ^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info script-path=https://raw.githubusercontent.com/chitou163/loon/main/Js/jparking_sign.js, requires-body=true, timeout=10, enabled=false, tag=获取捷停车userId
 
 ================ Boxjs订阅 ================
 订阅地址：https://raw.githubusercontent.com/FoKit/Scripts/main/boxjs/fokit.boxjs.json
