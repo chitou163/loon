@@ -17,7 +17,9 @@ DOMAIN, fceyeg.johjxe.com, DIRECT
 
 [Script]
 http-response ^https?:\/\/.+\/shorter\/(video\/longvideoinfo|resource\/adInfoPageList\?adSpaceId|user\/getUser|resource\/getWindowNotice|tabIconConfigView|user\/getVipPvg|video\/home\/list|video\/search).*$ script-path = https://raw.githubusercontent.com/WeiGiegie/666/main/jtsp.js, tag = 加藤视频VIP
-http-response ^https?:\/\/.+\/shorter\/resource\/getAdInfoBySpaceId\?ad script-path = reject-dict
+
+[Rewrite]
+^https?:\/\/.+\/shorter\/resource\/getAdInfoBySpaceId\?ad reject-dict
 
 [mitm] 
 hostname = y7uyqg.hl8dbl.live,qrdure.youngnoble.cn,kpoe2e.x8w7t3.live,*jttv*,kpoe2e.x8w7t3.live,zihjyv.jajrc1.live,fceyeg.johjxe.com
