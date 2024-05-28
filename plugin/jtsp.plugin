@@ -1,0 +1,23 @@
+#!name = 加藤视频vip
+#!desc = 加藤视频vip解锁,付费视频,下载,会员线路,去广告+。
+#!openUrl = 
+#!author = WeiGiegie
+#!homepage = https://github.com/WeiGiegie/666
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/NeteaseCloudMusic.png
+#!date = 2024-03-23 23:25:49
+
+[Rule]
+DOMAIN, y7uyqg.hl8dbl.live, DIRECT
+DOMAIN, qrdure.youngnoble.cn, DIRECT
+DOMAIN, kpoe2e.x8w7t3.live, DIRECT
+DOMAIN-KEYWORD, jttv, DIRECT
+DOMAIN, kpoe2e.x8w7t3.live, DIRECT
+DOMAIN, zihjyv.jajrc1.live, DIRECT
+DOMAIN, fceyeg.johjxe.com, DIRECT
+
+[Script]
+http-response ^https?:\/\/.+\/shorter\/(video\/longvideoinfo|resource\/adInfoPageList\?adSpaceId|user\/getUser|resource\/getWindowNotice|tabIconConfigView|user\/getVipPvg|video\/home\/list|video\/search).*$ script-path = https://raw.githubusercontent.com/WeiGiegie/666/main/jtsp.js, tag = 加藤视频VIP
+http-response ^https?:\/\/.+\/shorter\/resource\/getAdInfoBySpaceId\?ad script-path = reject-dict
+
+[mitm] 
+hostname = y7uyqg.hl8dbl.live,qrdure.youngnoble.cn,kpoe2e.x8w7t3.live,*jttv*,kpoe2e.x8w7t3.live,zihjyv.jajrc1.live,fceyeg.johjxe.com
