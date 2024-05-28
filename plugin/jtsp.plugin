@@ -3,8 +3,8 @@
 #!openUrl = 
 #!author = WeiGiegie
 #!homepage = https://github.com/WeiGiegie/666
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/NeteaseCloudMusic.png
-#!date = 2024-03-23 23:25:49
+#!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AfreecaTV.png
+#!date = 2024-5.27
 
 [Rule]
 DOMAIN, y7uyqg.hl8dbl.live, DIRECT
