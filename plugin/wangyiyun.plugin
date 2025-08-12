@@ -22,5 +22,5 @@ http-request ^https?:\/\/interface.+music\.163\.com\/eapi\/(homepage\/|v6\/)?pla
 # 会员认证
 http-request ^https?:\/\/interface.+music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query script-path = https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, tag = 会员认证
 
-[mitm] 
+[MitM] 
 hostname = *.music.163.com
