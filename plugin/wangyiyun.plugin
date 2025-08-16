@@ -1,5 +1,5 @@
 #!name = 网易云解锁VIP
-#!desc = 不会变身会员,可以直接听会员歌曲！无法调高音质！仅限9.1.90版本
+#!desc = 不会变身会员,可以直接听会员歌曲！无法调高音质!
 #!openUrl = https://apps.apple.com/app/id590338362
 #!author = GieGie777[https://github.com/WeiGiegie/]
 #!homepage = https://t.me/GieGie777
@@ -23,4 +23,4 @@ http-request ^https?:\/\/interface.+music\.163\.com\/eapi\/(homepage\/|v6\/)?pla
 http-request ^https?:\/\/interface.+music\.163\.com\/eapi\/vipauth\/app\/auth\/(soundquality\/)?query script-path = https://raw.githubusercontent.com/WeiGiegie/666/main/wangyiyun.js, tag = 会员认证
 
 [MitM] 
-hostname = *.music.163.com
+hostname = *music.163.com,interface*.music.163.com
