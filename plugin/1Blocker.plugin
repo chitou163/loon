@@ -1,0 +1,16 @@
+#!name = 1Blocker-AdBlocker解锁订阅
+#!desc = 解锁订阅!
+#!openUrl = https://apps.apple.com/app/id1365531024
+#!author = afengye[https://github.com/afengye]
+#!homepage = https://t.me/afengye
+#!icon = https://raw.githubusercontent.com/chitou163/loon/refs/heads/main/icon/1Blocker-AdBlock.png
+#!date = 2025-08-18
+
+
+[Script]
+http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) script-path=https://raw.githubusercontent.com/afengye/QX/main/blocker.js, requires-body=true, timeout=60, tag=1Blocker解锁订阅
+
+http-request ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/.+$) script-path=https://raw.githubusercontent.com/afengye/QX/main/blocker.js, timeout=60, tag=blocker
+
+[MITM]
+hostname = api.revenuecat.com
