@@ -1,5 +1,5 @@
 #!name = 波点音乐伪VIP
-#!desc = 只能播放推荐页面的VIP歌曲
+#!desc = 解锁VIP歌曲
 #!openUrl = https://apps.apple.com/id1541981555
 #!author = chxm1023[https://github.com/chxm1023]
 #!homepage = https://t.me/ddm1023
@@ -8,7 +8,7 @@
 
 
 [Script]
-http-response ^https?:\/\/bd-api\.kuwo\.cn\/api\/(service\/advert\/config|play\/advert\/info|play\/music\/v2\/checkRight|ucenter\/users\/login|pay\/audition\/vip\/single|service\/music\/info) script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/bdyy.js, requires-body=true, timeout=60, tag=bdyy
+http-response ^https?:\/\/bd-api\.kuwo\.cn\/api\/(service\/advert\/config|play\/advert\/info|play\/music\/v2\/checkRight|ucenter\/users\/login|pay\/audition\/vip\/single|service\/music\/info) script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/bdyy.js, requires-body=true, timeout=60, tag=波点音乐VIP
 
 [MITM]
 hostname = bd-api.kuwo.cn, *.kuwo.cn
