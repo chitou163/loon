@@ -4,12 +4,12 @@
 #!author = chxm1023[https://github.com/chxm1023]
 #!homepage = https://t.me/ddm1023
 #!icon = https://raw.githubusercontent.com/luestr/IconResource/refs/heads/main/App_icon/120px/BodianMusic.png
-#!date = 2025-08-18
+#!date = 2025-08-25
 
 
 [Script]
-http-response ^https:\/\/bd-api\.kuwo\.cn\/api\/(ucenter\/users|play\/listening\/user|service\/(home\/index|banner\/myPage|advert\/watch)) script-path=https://raw.githubusercontent.com/chitou163/loon/refs/heads/main/Js/BodianMusic.js, requires-body=true, timeout=60, tag=波点音乐伪VIP
+http-response ^https?:\/\/bd-api\.kuwo\.cn\/api\/(service\/advert\/config|play\/advert\/info|play\/music\/v2\/checkRight|ucenter\/users\/login|pay\/audition\/vip\/single|service\/music\/info) script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/bdyy.js, requires-body=true, timeout=60, tag=bdyy
 
 [MITM]
-hostname = bd-api.kuwo.cn
+hostname = bd-api.kuwo.cn, *.kuwo.cn
 
